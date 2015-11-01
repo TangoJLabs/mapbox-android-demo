@@ -14,6 +14,6 @@
 	<string name="street">Street</string>
 
     <!-- Access Token -->
-    <string name="testAccessToken">pk.eyJ1IjoiYmxlZWdlIiwiYSI6IkRGLTFPU00ifQ.qJpq3jytAL9A-z_tkNypqg</string>
+    <string name="testAccessToken">sk.eyJ1Ijoic3dzIiwiYSI6IjhTSmRZWHMifQ.0V8Urnffuv0WQE_24Ah1pw</string>
 
 </resources>

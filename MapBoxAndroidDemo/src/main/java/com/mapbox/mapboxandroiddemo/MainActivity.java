@@ -37,10 +37,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         mv = (MapView) findViewById(R.id.mapview);
-        mv.setStyle(Style.MAPBOX_STREETS);
-        mv.setCenterCoordinate(new LatLng(0, 0));
+        mv.setStyleUrl("https://www.mapbox.com/ios-sdk/files/mapbox-raster-v8.json");
+        mv.setCenterCoordinate(new LatLng(38.91318, -77.03257));
+        mv.setZoomLevel(8);
 
-		// Show user location (purposely not in follow mode)
+        // Show user location (purposely not in follow mode)
         if ((ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) ||
                 (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED)) {
             ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_COARSE_LOCATION, Manifest.permission.ACCESS_FINE_LOCATION}, PERMISSIONS_LOCATION);
